@@ -9,6 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CustomerEditComponent implements OnInit {
 
+  // This is for testing
   @Input() customerData:any = { 
     CustomerID:0
     , CustomerName: ''
