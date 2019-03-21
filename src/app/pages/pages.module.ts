@@ -8,19 +8,19 @@ import { PagesComponent } from './pages.component';
 
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
-import { OperatorAddComponent } from './operator/operator-add/operator-add.component';
-import { OperatorEditComponent } from './operator/operator-edit/operator-edit.component';
-import { OperatorDeleteComponent } from './operator/operator-delete/operator-delete.component';
-import { OperatorViewComponent } from './operator/operator-view/operator-view.component';
-import { OperatorListComponent } from './operator/operator-list/operator-list.component';
+import { FormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material';
+
 
 @NgModule({
-  declarations: [PagesComponent, SidebarComponent, HeaderComponent, OperatorAddComponent, OperatorEditComponent, OperatorDeleteComponent, OperatorViewComponent, OperatorListComponent],
+  declarations: [PagesComponent, SidebarComponent, HeaderComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
     TranslateModule,
-    NgbDropdownModule
+    NgbDropdownModule,
+    FormsModule,
+    MatTableModule
   ]
 })
 export class PagesModule { }

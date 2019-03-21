@@ -7,7 +7,6 @@ import { map, catchError, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CustomerDataService {
-  
   static readonly endpoint = 'http://class.onlinemoneypurse.com/API/';
   static readonly httpOptions = {
     headers: new HttpHeaders({
@@ -19,7 +18,7 @@ export class CustomerDataService {
   }
   
   getCustomers(): Observable<any> {
-    return this.http.get(CustomerDataService.endpoint + 'customers').pipe(
+    return this.http.get(CustomerDataService.endpoint + 'DataEntryOperators').pipe(
       map(this.extractData));
   }
   getCustomer(id): Observable<any> {

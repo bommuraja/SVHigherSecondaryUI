@@ -1,0 +1,25 @@
+<div>
+  <button (click)="add()">
+    Add New 
+  </button>
+</div>  
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">InterestPercentage1</th>
+      <th scope="col">Created By</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let operator of operatorList; let i=index;">
+    <tr>
+      <th scope="row">{{i+1}}</th>
+      <td>{{operator.InterestPercentage1}}</td>
+      <td>{{operator.CreatedBy}}</td>
+      <td>{{operator.CreatedBy}}</td>
+    </tr>
+   
+  </tbody>
+</table>
+

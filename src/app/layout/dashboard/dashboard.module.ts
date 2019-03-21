@@ -10,6 +10,7 @@ import {
     ChatComponent
 } from './components';
 import { StatModule } from '../../shared';
+import { MatTableModule } from '@angular/material';
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import { StatModule } from '../../shared';
         NgbCarouselModule,
         NgbAlertModule,
         DashboardRoutingModule,
-        StatModule
+        StatModule,
+        MatTableModule
     ],
     declarations: [
         DashboardComponent,

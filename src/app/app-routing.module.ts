@@ -12,6 +12,7 @@ const routes: Routes = [
     { path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule' },
     { path: 'pages',loadChildren:'./pages/pages.module#PagesModule'},
     { path: '**', redirectTo: 'not-found' }
+    
 ];
 
 @NgModule({
